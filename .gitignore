@@ -1,0 +1,8 @@
+﻿.venv/
+.browser_session/
+__pycache__/
+*.pyc
+.pytest_cache/
+.bob/
+*.xlsx
+!templates/*.xlsx

@@ -1,0 +1,635 @@
+{
+  "version": "1.0.0",
+  "url": "https://cas-prd.cas.wdc.app.cirrus.ibm.com/cas/action/actvReport_addInit",
+  "title": "Report Activity",
+  "count": 47,
+  "fields": [
+    {
+      "field_id": "actyNum",
+      "name": "formBean.actyNum",
+      "label": "Activity Num",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": null,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "",
+      "name": "",
+      "label": "",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": "",
+      "max_length": null,
+      "options": [],
+      "default_value": "▼ "
+    },
+    {
+      "field_id": "",
+      "name": "",
+      "label": "",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": "",
+      "max_length": null,
+      "options": [],
+      "default_value": "Χ "
+    },
+    {
+      "field_id": "activityReportDate",
+      "name": "",
+      "label": "activityReportDate",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": null,
+      "options": [],
+      "default_value": "2026-10-29"
+    },
+    {
+      "field_id": "originActionStatus",
+      "name": "originActionStatus",
+      "label": "Activity Status",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": null,
+      "options": [],
+      "default_value": "DRAFT"
+    },
+    {
+      "field_id": "",
+      "name": "",
+      "label": "",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": "",
+      "max_length": null,
+      "options": [],
+      "default_value": "▼ "
+    },
+    {
+      "field_id": "",
+      "name": "",
+      "label": "",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": "",
+      "max_length": null,
+      "options": [],
+      "default_value": "Χ "
+    },
+    {
+      "field_id": "activityReportDateEnd",
+      "name": "",
+      "label": "activityReportDateEnd",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": null,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "activityType",
+      "name": "formBean.activityType",
+      "label": "Activity Type",
+      "field_type": "select",
+      "tag": "select",
+      "type": "select",
+      "required": false,
+      "max_length": null,
+      "options": [
+        {
+          "value": "Hardware",
+          "label": "Hardware",
+          "text": "Hardware"
+        },
+        {
+          "value": "Software",
+          "label": "Software",
+          "text": "Software"
+        }
+      ],
+      "default_value": "Hardware"
+    },
+    {
+      "field_id": "serviceType",
+      "name": "formBean.serviceType",
+      "label": "Service Type",
+      "field_type": "select",
+      "tag": "select",
+      "type": "select",
+      "required": false,
+      "max_length": null,
+      "options": [
+        {
+          "value": "1",
+          "label": "Account Support",
+          "text": "Account Support"
+        },
+        {
+          "value": "3",
+          "label": "Administration",
+          "text": "Administration"
+        },
+        {
+          "value": "2",
+          "label": "Marketing & Sales",
+          "text": "Marketing & Sales"
+        }
+      ],
+      "default_value": "1"
+    },
+    {
+      "field_id": "serviceDetl",
+      "name": "formBean.serviceDetl",
+      "label": "Service Detail",
+      "field_type": "select",
+      "tag": "select",
+      "type": "select",
+      "required": false,
+      "max_length": null,
+      "options": [
+        {
+          "value": "Client Meeting",
+          "label": "Client Meeting",
+          "text": "Client Meeting"
+        },
+        {
+          "value": "Delivery Mgt",
+          "label": "Delivery Mgt",
+          "text": "Delivery Mgt"
+        },
+        {
+          "value": "Kyndryl LBS",
+          "label": "Kyndryl LBS",
+          "text": "Kyndryl LBS"
+        },
+        {
+          "value": "PMO Support",
+          "label": "PMO Support",
+          "text": "PMO Support"
+        },
+        {
+          "value": "Project Services",
+          "label": "Project Services",
+          "text": "Project Services"
+        },
+        {
+          "value": "RE Onsite",
+          "label": "RE Onsite",
+          "text": "RE Onsite"
+        },
+        {
+          "value": "TSS Critsit Mgt",
+          "label": "TSS Critsit Mgt",
+          "text": "TSS Critsit Mgt"
+        }
+      ],
+      "default_value": "Client Meeting"
+    },
+    {
+      "field_id": "startTime",
+      "name": "formBean.actyStartTime",
+      "label": "Start Time (HHMM)",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 5,
+      "options": [],
+      "default_value": "12:53"
+    },
+    {
+      "field_id": "stopTime",
+      "name": "formBean.actyStopTime",
+      "label": "Stop Time (HHMM)",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 5,
+      "options": [],
+      "default_value": "13:53"
+    },
+    {
+      "field_id": "actyDuration",
+      "name": "formBean.actyDuration",
+      "label": "Activity Duration(Mins)",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": null,
+      "options": [],
+      "default_value": "60.00"
+    },
+    {
+      "field_id": "chrgDept",
+      "name": "formBean.chrgDept",
+      "label": "Chargeable IBM Dept",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 6,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "projNum",
+      "name": "formBean.projNum",
+      "label": "Project Num",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 9,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "custNumUser",
+      "name": "formBean.custNum",
+      "label": "Customer Num\t\t            OR",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 8,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "custNmUser",
+      "name": "formBean.custName",
+      "label": "Customer Name",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 90,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "custNameNls1",
+      "name": "formBean.custNameNls",
+      "label": "Search Customer Name and Retrieve Customer details in NLS characters?",
+      "field_type": "checkbox",
+      "tag": "input",
+      "type": "checkbox",
+      "required": false,
+      "max_length": null,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "prodType",
+      "name": "formBean.prodType",
+      "label": "Product Type",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 15,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "prodCategory",
+      "name": "formBean.prodCat",
+      "label": "Product Category",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 30,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "actyDesc",
+      "name": "formBean.actyDesc",
+      "label": "Activity Desc",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 70,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "in",
+      "name": "",
+      "label": "Activity Desc",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": null,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "contrID",
+      "name": "formBean.contrNum",
+      "label": "Contract ID",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 30,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "activityForm_formBean_contrOffgId",
+      "name": "formBean.contrOffgId",
+      "label": "Contract Offg ID",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 20,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "custContact",
+      "name": "formBean.custContact",
+      "label": "Customer Contact",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 90,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "custStreet",
+      "name": "formBean.custStreet",
+      "label": "Customer Street",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 180,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "sitePartyId",
+      "name": "formBean.sitePartyId",
+      "label": "Site Party ID",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 10,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "custCity",
+      "name": "formBean.custCity",
+      "label": "Customer City",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 90,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "custState",
+      "name": "formBean.custState",
+      "label": "Customer State / Province",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 20,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "custZipCode",
+      "name": "formBean.custZipCode",
+      "label": "Customer ZIP / Postal Code",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 8,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "prodModel",
+      "name": "formBean.prodModel",
+      "label": "Product Model",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 3,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "activityForm_formBean_prodFamily",
+      "name": "formBean.prodFamily",
+      "label": "Product Family",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 30,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "activityForm_formBean_marketId",
+      "name": "formBean.marketId",
+      "label": "Marketing ID",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 60,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "activityForm_formBean_compntId",
+      "name": "formBean.compntId",
+      "label": "Component ID",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 60,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "activityForm_formBean_releaseLvl",
+      "name": "formBean.releaseLvl",
+      "label": "Release Level",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 30,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "empCntry",
+      "name": "formBean.empCnty",
+      "label": "Employee Country",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 3,
+      "options": [],
+      "default_value": "749"
+    },
+    {
+      "field_id": "empNum",
+      "name": "formBean.empNum",
+      "label": "Employee Num",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 15,
+      "options": [],
+      "default_value": "075044"
+    },
+    {
+      "field_id": "empDept",
+      "name": "formBean.empDept",
+      "label": "Employee Dept",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 8,
+      "options": [],
+      "default_value": "LRE"
+    },
+    {
+      "field_id": "empSkill",
+      "name": "formBean.empSkill",
+      "label": "Employee Skill",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 5,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "empOrg",
+      "name": "formBean.empOrg",
+      "label": "Employee Org",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 30,
+      "options": [],
+      "default_value": "BC"
+    },
+    {
+      "field_id": "empBu",
+      "name": "formBean.empBu",
+      "label": "Employee Business Unit",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 20,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "empType",
+      "name": "formBean.empType",
+      "label": "Employee Type",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 5,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "empGeo",
+      "name": "formBean.empGeo",
+      "label": "Employee Geography",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 10,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "empTerrNum",
+      "name": "formBean.empTerrNum",
+      "label": "Employee Territory",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": 30,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "activityForm_formBean_timeStamp",
+      "name": "formBean.timeStamp",
+      "label": "Timestamp",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": null,
+      "options": [],
+      "default_value": ""
+    },
+    {
+      "field_id": "extrDate",
+      "name": "formBean.extrDate",
+      "label": "Extract DT",
+      "field_type": "text",
+      "tag": "input",
+      "type": "text",
+      "required": false,
+      "max_length": null,
+      "options": [],
+      "default_value": ""
+    }
+  ]
+}

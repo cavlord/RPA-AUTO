@@ -1,0 +1,26 @@
+app:
+  name: "Hermes CAS ReportFlow"
+  version: "1.0.0"
+
+urls:
+  add_activity: "https://cas-prd.cas.wdc.app.cirrus.ibm.com/cas/action/actvReport_addInit"
+  search_activity: "https://cas-prd.cas.wdc.app.cirrus.ibm.com/cas/action/actvReport_preSearch"
+
+browser:
+  headless: false
+  slow_mo_ms: 100
+  timeout_ms: 30000
+  viewport:
+    width: 1280
+    height: 800
+  user_data_dir: ".browser_session"
+
+paths:
+  artifacts_dir: "artifacts"
+  discovered_fields: "artifacts/discovered_fields.json"
+  # {RPA_HOME} = <Documents>/RPA of the current user (created by the installer)
+  input_dir: "{RPA_HOME}/REPORT"
+  output_dir: "{RPA_HOME}/REPORT"
+  excel_template: "{RPA_HOME}/REPORT/CAS_Activity_Entry_Template.xlsx"
+  parking_dir: "{RPA_HOME}/PARKING"
+  parking_template: "{RPA_HOME}/PARKING/Template Parkir MDT.xlsx"
